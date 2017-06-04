@@ -10,7 +10,7 @@
 	</typeAliases>
 	<environments default="development">		<!-- 配置数据源的相关信息 -->
 		<environment id="development">
-			<transactionManager type="jdbc" />	<!-- 使用JDBC方式管理 -->
+			<transactionManager type="jdbc" />	<!-- 使用JDBC方式管理事务 -->
 			<dataSource type="POOLED">			<!-- 设置数据源类型，此时为POOLED -->
 				<property name="driver" value="org.gjt.mm.mysql.Driver" />
 				<property name="url" value="jdbc:mysql://localhost:3306/czl" />
