@@ -92,3 +92,9 @@
 2017-06-04 22:30:12,176 TRACE [com.czl.mapping.NewsNS.getAllCount] - <==    Columns: COUNT(*)
 2017-06-04 22:30:12,177 TRACE [com.czl.mapping.NewsNS.getAllCount] - <==        Row: 9
 2017-06-04 22:30:12,179 DEBUG [com.czl.mapping.NewsNS.getAllCount] - <==      Total: 1
+2017-06-05 02:17:55,969 DEBUG [com.czl.mapping.NewsNS] - Cache Hit Ratio [com.czl.mapping.NewsNS]: 0.0
+2017-06-05 02:17:56,121 DEBUG [com.czl.mapping.NewsNS.findById] - ==>  Preparing: SELECT nid,title,note FROM news WHERE nid=? 
+2017-06-05 02:17:56,172 DEBUG [com.czl.mapping.NewsNS.findById] - ==> Parameters: 3(Long)
+2017-06-05 02:17:56,200 TRACE [com.czl.mapping.NewsNS.findById] - <==    Columns: nid, title, note
+2017-06-05 02:17:56,200 TRACE [com.czl.mapping.NewsNS.findById] - <==        Row: 3, Android-509091100, <<BLOB>>
+2017-06-05 02:17:56,210 DEBUG [com.czl.mapping.NewsNS.findById] - <==      Total: 1

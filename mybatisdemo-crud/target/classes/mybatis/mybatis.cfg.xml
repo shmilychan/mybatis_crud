@@ -4,6 +4,9 @@
     "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <!-- XML配置文件根节点，表示要进行mybatis的相关配置 -->
 <configuration>
+	<settings>	<!-- 启用系统中的二级缓存配置 -->
+		<setting name="cacheEnabled" value="true"/>
+	</settings>
 	<typeAliases>	<!-- 配置VO类的别名操作，以简化映射文件的类型编写 -->
 		<!-- <typeAlias type="cn.mldn.vo.News" alias="News"/> -->
 		<package name="com.czl.vo"/>

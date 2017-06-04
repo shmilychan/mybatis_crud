@@ -3,6 +3,7 @@
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- 此处定义的是VO类与SQL语句之间的处理关系，namespace描述的是一个命名空间 -->
 <mapper namespace="com.czl.mapping.NewsNS">
+	<cache eviction="LRU" flushInterval="1000" readOnly="true" size="512"/>
 	<!-- 非动态SQL -->
 	<!-- <select id="getAllCount" parameterType="map" resultType="long">
 		SELECT COUNT(*) FROM news WHERE ${column} LIKE #{keyWord}
