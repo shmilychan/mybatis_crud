@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 此处定义的是VO类与SQL语句之间的处理关系，namespace描述的是一个命名空间 -->
+<mapper namespace="com.czl.mapping.NewsNS">
+	<!-- 非动态SQL -->
+	<!-- <select id="getAllCount" parameterType="map" resultType="long">
+		SELECT COUNT(*) FROM news WHERE ${column} LIKE #{keyWord}
+	</select> -->
+	<!-- 动态SQL -->
+	<select id="getAllCount" parameterType="map" resultType="long">
+		SELECT COUNT(*) FROM news 
+		<where>
+			<if test="column != null and keyWord != null">
+				${column} LIKE #{keyWord}
+			</if>
+		</where>
+	</select>
+
+	<!-- 非动态SQL -->
+	<!-- <select id="findAllSplit" parameterType="map" resultType="News">
+		SELECT nid,title,note FROM news
+		WHERE ${column} LIKE #{keyWord} LIMIT #{start},#{lineSize}
+	</select> -->
+	<!-- 动态sql -->
+	<select id="findAllSplit" parameterType="map" resultType="News">
+		SELECT nid,title,note FROM news
+		<where>
+			<if test="column != null and keyWord != null">
+				${column} LIKE #{keyWord}
+			</if>
+		</where>
+		LIMIT #{start},#{lineSize}
+	</select>
+
+	<select id="findMap" resultType="map">
+		SELECT nid,title,note FROM news ;
+	</select>
+
+	<!-- 此时的查询一定返回多行记录，但是这多行记录里面都是News的VO对象 -->
+	<select id="findAll" resultType="News">
+		SELECT nid,title,note FROM news 
+	</select>
+
+	<!-- resultType就是返回的VO类型（别名） -->
+	<select id="findById" parameterType="long" resultType="News">
+		SELECT nid,title,note FROM news WHERE nid=#{nid}
+	</select>
+
+	<!-- 如果此时只传递有一个参数，则在使用的时候参数名称可以随意写 -->
+	<delete id="doRemove" parameterType="long">
+		DELETE FROM news WHERE nid=#{nid}
+	</delete>
+
+	<update id="doUpdate" parameterType="News">
+		UPDATE news SET title=#{title},note=#{note} WHERE nid=#{nid} ;
+	</update>
+	<!-- 实现增加的SQL语句，paraemterType表示参数类型 -->
+	<!-- 此时的参数类型如果要想起作用，那么必须在mybatis.cfg.xml文件中配置一个别名 -->
+	<insert id="doCreate" parameterType="News" keyProperty="nid" useGeneratedKeys="true">
+		INSERT INTO news(title,note) VALUES (#{title},#{note}) ;
+	</insert>
+</mapper>

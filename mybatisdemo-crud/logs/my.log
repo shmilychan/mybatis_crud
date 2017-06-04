@@ -1,0 +1,94 @@
+2017-06-04 16:00:07,268 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,note) VALUES (?,?) ; 
+2017-06-04 16:00:07,314 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==> Parameters: 中午肚子饿了么？(String), 继续好好上课吧，别想太多了，不下课，好好学习，天天向上。(String)
+2017-06-04 16:00:07,315 DEBUG [com.czl.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-06-04 16:01:11,841 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,note) VALUES (?,?) ; 
+2017-06-04 16:01:11,888 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==> Parameters: Android(String), 上课好累啊(String)
+2017-06-04 16:01:11,889 DEBUG [com.czl.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-06-04 21:35:43,689 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,note) VALUES (?,?) ; 
+2017-06-04 21:35:43,737 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==> Parameters: Android-509091100(String), 上课好累啊(String)
+2017-06-04 21:35:43,738 DEBUG [com.czl.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-06-04 21:36:02,216 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,note) VALUES (?,?) ; 
+2017-06-04 21:36:02,263 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==> Parameters: Android25(String), 上课好累啊(String)
+2017-06-04 21:36:02,265 DEBUG [com.czl.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-06-04 21:36:11,715 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,note) VALUES (?,?) ; 
+2017-06-04 21:36:11,762 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==> Parameters: Android4062(String), 上课好累啊(String)
+2017-06-04 21:36:11,764 DEBUG [com.czl.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-06-04 21:36:31,017 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,note) VALUES (?,?) ; 
+2017-06-04 21:36:31,059 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==> Parameters: Android3524(String), 上课好累啊(String)
+2017-06-04 21:36:31,060 DEBUG [com.czl.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-06-04 21:36:34,870 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,note) VALUES (?,?) ; 
+2017-06-04 21:36:34,958 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==> Parameters: Android4516(String), 上课好累啊(String)
+2017-06-04 21:36:34,967 DEBUG [com.czl.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-06-04 21:36:35,095 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,note) VALUES (?,?) ; 
+2017-06-04 21:36:35,148 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==> Parameters: Android2990(String), 上课好累啊(String)
+2017-06-04 21:36:35,155 DEBUG [com.czl.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-06-04 21:36:37,179 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,note) VALUES (?,?) ; 
+2017-06-04 21:36:37,231 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==> Parameters: Android9104(String), 上课好累啊(String)
+2017-06-04 21:36:37,234 DEBUG [com.czl.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-06-04 21:36:37,351 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,note) VALUES (?,?) ; 
+2017-06-04 21:36:37,421 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==> Parameters: Android6221(String), 上课好累啊(String)
+2017-06-04 21:36:37,444 DEBUG [com.czl.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-06-04 21:36:37,733 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,note) VALUES (?,?) ; 
+2017-06-04 21:36:37,787 DEBUG [com.czl.mapping.NewsNS.doCreate] - ==> Parameters: Android4493(String), 上课好累啊(String)
+2017-06-04 21:36:37,788 DEBUG [com.czl.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-06-04 21:39:38,762 DEBUG [com.czl.mapping.NewsNS.findById] - ==>  Preparing: SELECT nid,title,note FROM news WHERE nid=? 
+2017-06-04 21:39:38,802 DEBUG [com.czl.mapping.NewsNS.findById] - ==> Parameters: 3(Long)
+2017-06-04 21:39:38,851 TRACE [com.czl.mapping.NewsNS.findById] - <==    Columns: nid, title, note
+2017-06-04 21:39:38,852 TRACE [com.czl.mapping.NewsNS.findById] - <==        Row: 3, Android-509091100, <<BLOB>>
+2017-06-04 21:39:38,857 DEBUG [com.czl.mapping.NewsNS.findById] - <==      Total: 1
+2017-06-04 21:49:37,420 DEBUG [com.czl.mapping.NewsNS.doUpdate] - ==>  Preparing: UPDATE news SET title=?,note=? WHERE nid=? ; 
+2017-06-04 21:49:37,463 DEBUG [com.czl.mapping.NewsNS.doUpdate] - ==> Parameters: Redis(String), 内存数据库(String), 2(Long)
+2017-06-04 21:49:37,502 DEBUG [com.czl.mapping.NewsNS.doUpdate] - <==    Updates: 1
+2017-06-04 21:54:21,411 DEBUG [com.czl.mapping.NewsNS.doRemove] - ==>  Preparing: DELETE FROM news WHERE nid=? 
+2017-06-04 21:54:21,454 DEBUG [com.czl.mapping.NewsNS.doRemove] - ==> Parameters: 1(Long)
+2017-06-04 21:54:21,456 DEBUG [com.czl.mapping.NewsNS.doRemove] - <==    Updates: 1
+2017-06-04 21:55:50,425 DEBUG [com.czl.mapping.NewsNS.findById] - ==>  Preparing: SELECT nid,title,note FROM news WHERE nid=? 
+2017-06-04 21:55:50,468 DEBUG [com.czl.mapping.NewsNS.findById] - ==> Parameters: 3(Long)
+2017-06-04 21:55:50,506 TRACE [com.czl.mapping.NewsNS.findById] - <==    Columns: nid, title, note
+2017-06-04 21:55:50,506 TRACE [com.czl.mapping.NewsNS.findById] - <==        Row: 3, Android-509091100, <<BLOB>>
+2017-06-04 21:55:50,513 DEBUG [com.czl.mapping.NewsNS.findById] - <==      Total: 1
+2017-06-04 21:59:54,059 DEBUG [com.czl.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,note FROM news 
+2017-06-04 21:59:54,102 DEBUG [com.czl.mapping.NewsNS.findAll] - ==> Parameters: 
+2017-06-04 21:59:54,132 TRACE [com.czl.mapping.NewsNS.findAll] - <==    Columns: nid, title, note
+2017-06-04 21:59:54,132 TRACE [com.czl.mapping.NewsNS.findAll] - <==        Row: 2, Redis, <<BLOB>>
+2017-06-04 21:59:54,140 TRACE [com.czl.mapping.NewsNS.findAll] - <==        Row: 3, Android-509091100, <<BLOB>>
+2017-06-04 21:59:54,140 TRACE [com.czl.mapping.NewsNS.findAll] - <==        Row: 4, Android25, <<BLOB>>
+2017-06-04 21:59:54,140 TRACE [com.czl.mapping.NewsNS.findAll] - <==        Row: 5, Android4062, <<BLOB>>
+2017-06-04 21:59:54,140 TRACE [com.czl.mapping.NewsNS.findAll] - <==        Row: 6, Android3524, <<BLOB>>
+2017-06-04 21:59:54,141 TRACE [com.czl.mapping.NewsNS.findAll] - <==        Row: 7, Android4516, <<BLOB>>
+2017-06-04 21:59:54,141 TRACE [com.czl.mapping.NewsNS.findAll] - <==        Row: 8, Android2990, <<BLOB>>
+2017-06-04 21:59:54,142 TRACE [com.czl.mapping.NewsNS.findAll] - <==        Row: 9, Android9104, <<BLOB>>
+2017-06-04 21:59:54,142 TRACE [com.czl.mapping.NewsNS.findAll] - <==        Row: 10, Android6221, <<BLOB>>
+2017-06-04 21:59:54,142 TRACE [com.czl.mapping.NewsNS.findAll] - <==        Row: 11, Android4493, <<BLOB>>
+2017-06-04 21:59:54,142 DEBUG [com.czl.mapping.NewsNS.findAll] - <==      Total: 10
+2017-06-04 22:09:09,096 DEBUG [com.czl.mapping.NewsNS.findMap] - ==>  Preparing: SELECT nid,title,note FROM news ; 
+2017-06-04 22:09:09,140 DEBUG [com.czl.mapping.NewsNS.findMap] - ==> Parameters: 
+2017-06-04 22:09:09,171 TRACE [com.czl.mapping.NewsNS.findMap] - <==    Columns: nid, title, note
+2017-06-04 22:09:09,171 TRACE [com.czl.mapping.NewsNS.findMap] - <==        Row: 2, Redis, <<BLOB>>
+2017-06-04 22:09:09,180 TRACE [com.czl.mapping.NewsNS.findMap] - <==        Row: 3, Android-509091100, <<BLOB>>
+2017-06-04 22:09:09,180 TRACE [com.czl.mapping.NewsNS.findMap] - <==        Row: 4, Android25, <<BLOB>>
+2017-06-04 22:09:09,180 TRACE [com.czl.mapping.NewsNS.findMap] - <==        Row: 5, Android4062, <<BLOB>>
+2017-06-04 22:09:09,180 TRACE [com.czl.mapping.NewsNS.findMap] - <==        Row: 6, Android3524, <<BLOB>>
+2017-06-04 22:09:09,181 TRACE [com.czl.mapping.NewsNS.findMap] - <==        Row: 7, Android4516, <<BLOB>>
+2017-06-04 22:09:09,182 TRACE [com.czl.mapping.NewsNS.findMap] - <==        Row: 8, Android2990, <<BLOB>>
+2017-06-04 22:09:09,182 TRACE [com.czl.mapping.NewsNS.findMap] - <==        Row: 9, Android9104, <<BLOB>>
+2017-06-04 22:09:09,183 TRACE [com.czl.mapping.NewsNS.findMap] - <==        Row: 10, Android6221, <<BLOB>>
+2017-06-04 22:09:09,183 TRACE [com.czl.mapping.NewsNS.findMap] - <==        Row: 11, Android4493, <<BLOB>>
+2017-06-04 22:09:09,183 DEBUG [com.czl.mapping.NewsNS.findMap] - <==      Total: 10
+2017-06-04 22:20:07,731 DEBUG [com.czl.mapping.NewsNS.findAllSplit] - ==>  Preparing: SELECT nid,title,note FROM news WHERE title LIKE ? LIMIT ?,? 
+2017-06-04 22:20:07,808 DEBUG [com.czl.mapping.NewsNS.findAllSplit] - ==> Parameters: %Android%(String), 2(Long), 2(Integer)
+2017-06-04 22:20:07,837 TRACE [com.czl.mapping.NewsNS.findAllSplit] - <==    Columns: nid, title, note
+2017-06-04 22:20:07,837 TRACE [com.czl.mapping.NewsNS.findAllSplit] - <==        Row: 5, Android4062, <<BLOB>>
+2017-06-04 22:20:07,845 TRACE [com.czl.mapping.NewsNS.findAllSplit] - <==        Row: 6, Android3524, <<BLOB>>
+2017-06-04 22:20:07,845 DEBUG [com.czl.mapping.NewsNS.findAllSplit] - <==      Total: 2
+2017-06-04 22:22:57,436 DEBUG [com.czl.mapping.NewsNS.findAllSplit] - ==>  Preparing: SELECT nid,title,note FROM news WHERE title LIKE ? LIMIT ?,? 
+2017-06-04 22:22:57,475 DEBUG [com.czl.mapping.NewsNS.findAllSplit] - ==> Parameters: %Android%(String), 2(Long), 2(Integer)
+2017-06-04 22:22:57,507 TRACE [com.czl.mapping.NewsNS.findAllSplit] - <==    Columns: nid, title, note
+2017-06-04 22:22:57,507 TRACE [com.czl.mapping.NewsNS.findAllSplit] - <==        Row: 5, Android4062, <<BLOB>>
+2017-06-04 22:22:57,513 TRACE [com.czl.mapping.NewsNS.findAllSplit] - <==        Row: 6, Android3524, <<BLOB>>
+2017-06-04 22:22:57,514 DEBUG [com.czl.mapping.NewsNS.findAllSplit] - <==      Total: 2
+2017-06-04 22:30:12,001 DEBUG [com.czl.mapping.NewsNS.getAllCount] - ==>  Preparing: SELECT COUNT(*) FROM news WHERE title LIKE ? 
+2017-06-04 22:30:12,112 DEBUG [com.czl.mapping.NewsNS.getAllCount] - ==> Parameters: %Android%(String)
+2017-06-04 22:30:12,176 TRACE [com.czl.mapping.NewsNS.getAllCount] - <==    Columns: COUNT(*)
+2017-06-04 22:30:12,177 TRACE [com.czl.mapping.NewsNS.getAllCount] - <==        Row: 9
+2017-06-04 22:30:12,179 DEBUG [com.czl.mapping.NewsNS.getAllCount] - <==      Total: 1
